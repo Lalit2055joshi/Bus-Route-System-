@@ -19,7 +19,7 @@ class RouteTable(tables.Table):
     class Meta:
         model = Route
         attrs = {'class':'table'}
-        fields = ('route_name','route_nmber')
+        fields = ('route_name','route_number')
 
 class BusDetailTable(tables.Table):
     bus_name = tables.Column(verbose_name='Bus Name',accessor='bus.bus_name')
@@ -33,7 +33,7 @@ class BusDetailTable(tables.Table):
 
 class RouteDetailTable(tables.Table):
     route_name = tables.Column(verbose_name='Route Name',accessor='route.route_name')
-    route_number = tables.Column(verbose_name='Route Number',accessor='route.route_nmber')
+    route_number = tables.Column(verbose_name='Route Number',accessor='route.route_number')
 
     class Meta:
         model = BusRoute

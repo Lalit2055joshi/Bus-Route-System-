@@ -10,7 +10,7 @@ class BusInfo(models.Model):
 
 class Route(models.Model):
     route_name = models.CharField(max_length=30)
-    route_nmber = models.CharField(max_length=30)
+    route_number = models.CharField(max_length=30)
 
     def __str__(self):
         return self.route_name

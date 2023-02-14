@@ -7,7 +7,7 @@ class BusInfoAdmin(admin.ModelAdmin):
 
 @admin.register(Route)
 class RouteAdmin(admin.ModelAdmin):
-    list_display = ['id','route_name','route_nmber']
+    list_display = ['id','route_name','route_number']
 
 @admin.register(BusRoute)
 class BusRouteAdmin(admin.ModelAdmin):
