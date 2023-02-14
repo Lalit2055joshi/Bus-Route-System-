@@ -2,13 +2,7 @@ import django_tables2 as tables
 from .models import *
 from django_tables2.utils import A
 class BusTable(tables.Table): 
-
     num_of_routes = tables.LinkColumn('list_of_routes',args=[tables.A('pk')],verbose_name='Number of routes this bus runs on', accessor='busroute_set.count', order_by=('num_of_routes'))
-    # action = tables.TemplateColumn('<a href="{% url \'list_of_routes\' record.id %}">{{ record.number_of_routes_this_bus_runs_on }}</a>', orderable=False, verbose_name='View')
-
-
-    # bus_details = tables.LinkColumn('buses_on_route', text='View', args=[tables.A('pk')])
-
     class Meta:
         model = BusInfo
         attrs = {'class':'table'}
