@@ -1,0 +1,7 @@
+{% extends 'busroute/base.html' %}
+{% block button %}
+<body>
+<a class="btn btn-primary" href="{% url 'buslist' %}" role="button">Buses</a>
+<a class="btn btn-primary" href="{% url 'routelist' %}" role="button">Routes</a>
+</body>
+{% endblock button %}

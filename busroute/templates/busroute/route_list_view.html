@@ -1,0 +1,8 @@
+{% extends 'busroute/base.html' %}
+{% block contant %}
+{% load render_table from django_tables2 %}
+
+<table>
+    {% render_table table %}
+</table>
+{% endblock contant %}
